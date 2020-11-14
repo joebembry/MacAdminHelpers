@@ -41,7 +41,7 @@ PKG_LANGUAGE="ML"
 MAINURL="https://macadmins.software/latest.xml"
 
 # Get latest version number
-FULL_VERSION=$(curl -s $MAINURL | xmllint --xpath '//latest/o365/text()' -)
+FULL_VERSION=$(curl -s $MAINURL | xmllint --xpath '//latest/vl2019/text()' -)
 
 # Determine working directory
 EXE_DIR=$(dirname "$0")
